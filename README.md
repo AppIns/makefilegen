@@ -1,6 +1,6 @@
 # Makefile Generator
 
-Create a makefile easily
+A makefile creator that works in browser and also as a node.js http server for other users
 
 Fire up a terminal and type
 
@@ -24,4 +24,4 @@ After you type that decide if you want to create a server or run it in the brows
     make linux
 ```
 
-If you are using the server, you can test it by going to "localhost:80" in browser
+If you are using the server, you can test it by going to "http://localhost" in browser
