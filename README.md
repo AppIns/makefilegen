@@ -25,3 +25,5 @@ After you type that decide if you want to create a server or run it in the brows
 ```
 
 If you are using the server, you can test it by going to "http://localhost" in browser
+
+## This porject doesn't contain much right now...
