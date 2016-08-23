@@ -15,17 +15,18 @@ http.createServer(function(req, res){
       {
         "js"   : "text/JavaScript",
         "html" : "text/html",
-        "css"  : "text/css"
+        "css"  : "text/css",
+        "ico"  : "image/icon"
       }
       [
-        // Get last string in array
+        // Split req.url by .'s and get the last string in array
         (req.url).split(".")[(req.url).split(".").length - 1]
       ];
       // Only send mimetype if it is not undefined
       if (typeof mime != "undefined") res.setHeader("context-type", mime);
       // If you don't get an error, send the file
       if (!err) fs.createReadStream("public" + req.url).pipe(res);
-      // Or send 404 page not found
+      // Or send 404 page not found (Add console.log(req.url) to see missing files)
       if (err)  res.end("404 page not found");
     });
   }
